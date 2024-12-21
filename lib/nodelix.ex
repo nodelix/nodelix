@@ -113,6 +113,13 @@ defmodule Nodelix do
   end
 
   @doc """
+  Same as `run/3` but using the latest known LTS version at the time of publishing.
+  """
+  def run_lts(profile, extra_args \\ []) when is_atom(profile) and is_list(extra_args) do
+    run(VersionManager.latest_lts_version(), profile, extra_args)
+  end
+
+  @doc """
   Installs Node.js if the configured version is not available,
   and then runs `node`.
 
@@ -124,5 +131,13 @@ defmodule Nodelix do
     end
 
     run(version, profile, args)
+  end
+
+  @doc """
+  Same as `install_and_run/3` but using the latest known LTS version at the time of publishing.
+  """
+  def install_and_run_lts(profile, extra_args \\ [])
+      when is_atom(profile) and is_list(extra_args) do
+    install_and_run(VersionManager.latest_lts_version(), profile, extra_args)
   end
 end
