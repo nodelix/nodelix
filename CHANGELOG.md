@@ -1,5 +1,23 @@
 # Changelog
 
+## [1.0.0-alpha.13](https://github.com/sheerlox/nodelix/compare/v1.0.0-alpha.12...v1.0.0-alpha.13) (2024-12-21)
+
+
+### ✨ Features
+
+* add `run_lts/2` and `install_and_run_lts/2` ([717d375](https://github.com/sheerlox/nodelix/commit/717d3755b42ef5184b330ad8cc0d3e49d196c189))
+
+
+### 🐛 Bug Fixes
+
+* update latest Node LTS version to 22.12.0 ([337e427](https://github.com/sheerlox/nodelix/commit/337e427fb24fb7cd460b2d97e06cfc9090af5881))
+
+
+### ♻️ Chores
+
+* **deps:** lock file maintenance ([be6d387](https://github.com/sheerlox/nodelix/commit/be6d387d3f1d7f6cf8c4ec1081562cabfcc47e57))
+* update Node to 22.10.0 in .tool-versions ([0b270dd](https://github.com/sheerlox/nodelix/commit/0b270dd57a53d886a9169ea1b10fe99d5e01b088))
+
 ## [1.0.0-alpha.12](https://github.com/sheerlox/nodelix/compare/v1.0.0-alpha.11...v1.0.0-alpha.12) (2024-06-20)
 
 
