@@ -144,20 +144,23 @@ defmodule Nodelix.VersionManager do
     if length(missing_keys) > 0 do
       Logger.debug("Retrieving #{length(missing_keys)} missing signing keys")
 
-      tasks =
-        Enum.map(missing_keys, fn key_id ->
-          Task.async(fn ->
-            url = "https://github.com/nodejs/release-keys/raw/main/keys/#{key_id}.asc"
-            dest = Path.join(keystore_path, "#{key_id}.asc")
+      keys =
+        Task.await_many(
+          Enum.map(missing_keys, fn key_id ->
+            Task.async(fn ->
+              url = "https://github.com/nodejs/release-keys/raw/main/keys/#{key_id}.asc"
+              dest = Path.join(keystore_path, "#{key_id}.asc")
+              binary = HttpUtils.fetch_body!(url)
+              File.write!(dest, binary, [:binary])
+              dest
+            end)
+          end),
+          60_000
+        )
 
-            binary = HttpUtils.fetch_body!(url)
-            File.write!(dest, binary, [:binary])
-            GPGex.cmd!(["--import", dest], keystore: keystore)
-            File.rm!(dest)
-          end)
-        end)
-
-      Task.await_many(tasks, 60000)
+      for key <- keys do
+        GPGex.cmd!(["--import", key], keystore: keystore)
+      end
     end
 
     GPGex.cmd!(["--verify", checksums_path], keystore: keystore)
