@@ -1,5 +1,26 @@
 # Changelog
 
+## [1.0.0-alpha.14](https://github.com/sheerlox/nodelix/compare/v1.0.0-alpha.13...v1.0.0-alpha.14) (2025-01-09)
+
+
+### 🐛 Bug Fixes
+
+* work on concurrent GPG imports leading to flaky key verification ([104b966](https://github.com/sheerlox/nodelix/commit/104b966d3e1cacda3533d8fdc21c757d973aed85)), closes [#17](https://github.com/sheerlox/nodelix/issues/17)
+
+
+### ⚙️ Continuous Integrations
+
+* **action:** update actions/cache action to v3.4.0 ([#9](https://github.com/sheerlox/nodelix/issues/9)) ([0dc4aaa](https://github.com/sheerlox/nodelix/commit/0dc4aaa8268d0a6dd8b5cfb7be54d80fbc7afffb))
+* **action:** update actions/checkout action to v4.2.2 ([#10](https://github.com/sheerlox/nodelix/issues/10)) ([8973818](https://github.com/sheerlox/nodelix/commit/8973818654efa4fb533c6d99be86be475fedb04d))
+* **action:** update actions/setup-node action to v4.1.0 ([#11](https://github.com/sheerlox/nodelix/issues/11)) ([229cf16](https://github.com/sheerlox/nodelix/commit/229cf1690d2802e6b02952b6668cd77e0bb1c46d))
+* **action:** update erlef/setup-beam action to v1.18.2 ([#13](https://github.com/sheerlox/nodelix/issues/13)) ([a25f7b4](https://github.com/sheerlox/nodelix/commit/a25f7b4daa8518f513df5ef6db76d1cc5eba316c))
+* **action:** update insurgent-lab/is-in-pr-action action to v0.2.0 ([#14](https://github.com/sheerlox/nodelix/issues/14)) ([979741a](https://github.com/sheerlox/nodelix/commit/979741a53d25f60326b7c2eb69f3c2bad05b1560))
+
+
+### ♻️ Chores
+
+* **deps:** lock file maintenance ([#18](https://github.com/sheerlox/nodelix/issues/18)) ([98bb738](https://github.com/sheerlox/nodelix/commit/98bb738781757dead0014f5d5cc50682a05fed47))
+
 ## [1.0.0-alpha.13](https://github.com/sheerlox/nodelix/compare/v1.0.0-alpha.12...v1.0.0-alpha.13) (2024-12-21)
 
 
