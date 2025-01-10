@@ -1,5 +1,8 @@
 {
   $schema: "https://docs.renovatebot.com/renovate-schema.json",
-  extends: ["github>insurgent-lab/.github//renovate/elixir/elixir-lib"]
+  "extends": [
+    "github>insurgent-lab/.github//renovate/base",
+    "github>insurgent-lab/.github//renovate/elixir/elixir-lib"
+  ]
 }
 
