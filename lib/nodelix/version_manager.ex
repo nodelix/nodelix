@@ -209,7 +209,7 @@ defmodule Nodelix.VersionManager do
         sleep_time = trunc(1_500 * :math.pow(2, tries))
 
         Logger.debug(
-          "[Nodelix] Fetching node #{version}  failed after #{tries} attempts. New attempt in #{sleep_time}ms"
+          "[Nodelix] Fetching node #{version} failed after #{tries} attempts. New attempt in #{sleep_time}ms"
         )
 
         Process.sleep(sleep_time)
