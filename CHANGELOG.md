@@ -1,5 +1,25 @@
 # Changelog
 
+## [1.0.0-alpha.15](https://github.com/sheerlox/nodelix/compare/v1.0.0-alpha.14...v1.0.0-alpha.15) (2025-01-10)
+
+
+### ✨ Features
+
+* add exponential backoff to archive download ([#23](https://github.com/sheerlox/nodelix/issues/23)) ([07e592b](https://github.com/sheerlox/nodelix/commit/07e592b77c259f396495d85f386efc847756af4f))
+
+
+### ⚙️ Continuous Integrations
+
+* **renovate:** keep dev runtime version up-to-date ([a246761](https://github.com/sheerlox/nodelix/commit/a246761ba2df8495e23061f24568dc96ff378f95))
+
+
+### ♻️ Chores
+
+* **action:** update actions/cache action to v4 ([#16](https://github.com/sheerlox/nodelix/issues/16)) [skip ci] ([f827bef](https://github.com/sheerlox/nodelix/commit/f827befac5e8bbae86f04b45da5858936c15eef0))
+* **deps:** lock file maintenance ([7002da2](https://github.com/sheerlox/nodelix/commit/7002da2f7c9c33546000e15ffc5fa1deba3814ad))
+* **deps:** lock file maintenance ([#22](https://github.com/sheerlox/nodelix/issues/22)) [skip ci] ([786fed8](https://github.com/sheerlox/nodelix/commit/786fed80b32f1479adb56126f12e94f24d2fee07))
+* **deps:** update node.js to v22.13.0 ([#19](https://github.com/sheerlox/nodelix/issues/19)) [skip ci] ([3af86b6](https://github.com/sheerlox/nodelix/commit/3af86b638bca6228061698637cbd5cb14c94eb27))
+
 ## [1.0.0-alpha.14](https://github.com/sheerlox/nodelix/compare/v1.0.0-alpha.13...v1.0.0-alpha.14) (2025-01-09)
 
 
